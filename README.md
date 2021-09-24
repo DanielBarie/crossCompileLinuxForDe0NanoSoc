@@ -50,3 +50,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 - After all the patching (or not) do `export CROSS_COMPILE=~/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-`
 - `make armv7_fpga_defconfig`
 - 
+
+# Steps for building the Altera Kernel
+- `mkdir altera_kernel`
+- `cd altera_kernel`
+- At the time of writing, the default version was 5.4 lts. We go for 5.10: `git clone --depth 1 -b socfpga-5.10.50-lts https://github.com/altera-opensource/linux-socfpga.git`
