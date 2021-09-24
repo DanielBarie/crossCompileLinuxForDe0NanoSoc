@@ -6,7 +6,8 @@ Inspired by
 
 # recommended reading 
 - Understanding the device tree (we'll be patching): https://www.nxp.com/docs/en/application-note/AN5125.pdf
--
+- Specifically the FPGA region of the device tree: https://www.kernel.org/doc/Documentation/devicetree/bindings/fpga/fpga-region.txt
+- And this one for the Altera/Intel SoCs (walkthrough): https://rocketboards.org/foswiki/Documentation/HOWTOCreateADeviceTree
 
 # steps
 - `wget -c https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf.tar.asc` or whatever version is current.
