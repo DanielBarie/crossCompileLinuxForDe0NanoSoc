@@ -4,6 +4,10 @@ Inspired by
 - https://github.com/ikwzm/FPGA-SoC-Linux
 - https://rocketboards.org/foswiki/Documentation/BuildingBootloader
 
+# recommended reading 
+- Understanding the device tree (we'll be patching): https://www.nxp.com/docs/en/application-note/AN5125.pdf
+-
+
 # steps
 - `wget -c https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf.tar.asc` or whatever version is current.
 
