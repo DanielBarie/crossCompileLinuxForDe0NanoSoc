@@ -56,3 +56,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 - `mkdir altera_kernel`
 - `cd altera_kernel`
 - At the time of writing, the default version was 5.4 lts. We go for 5.10: `git clone --depth 1 -b socfpga-5.10.50-lts https://github.com/altera-opensource/linux-socfpga.git`
+- `cd linux-socfpga`
+- Consider grabbing a default config: https://github.com/RobertCNelson/socfpga-kernel-dev/blob/v4.15.x/patches/defconfig (old kernel) or the one from the patch in https://github.com/ikwzm/FPGA-SoC-Linux/blob/master/files/linux-5.4.105-armv7-fpga.diff (old kernel, but closer to 5.10) 
+- If you decide to go it on your own: `make menuconfig`
+- 
