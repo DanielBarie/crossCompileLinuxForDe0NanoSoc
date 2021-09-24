@@ -3,6 +3,7 @@ Inspired by
 - https://forum.digikey.com/t/debian-getting-started-with-the-de0-nano-soc-kit/12434 (1)
 - https://github.com/ikwzm/FPGA-SoC-Linux
 - https://rocketboards.org/foswiki/Documentation/BuildingBootloader
+- https://bitlog.it/20170820_building_embedded_linux_for_the_terasic_de10-nano.html
 
 # recommended reading 
 - Understanding the device tree (we'll be patching): https://www.nxp.com/docs/en/application-note/AN5125.pdf
