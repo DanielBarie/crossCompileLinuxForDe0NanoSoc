@@ -1,6 +1,6 @@
 # crossCompileLinuxForDe0NanoSoc
 Inspired by
-- https://forum.digikey.com/t/debian-getting-started-with-the-de0-nano-soc-kit/12434
+- https://forum.digikey.com/t/debian-getting-started-with-the-de0-nano-soc-kit/12434 (1)
 - https://github.com/ikwzm/FPGA-SoC-Linux
 
 # steps
@@ -20,3 +20,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ```
+- install bison, flex, bc
+- get uboot (according to (1))
+- fix error: https://blog.lexina.in/2021/05/solution-for-multiple-definition-of-yylloc-error-u-boot/
+- 
