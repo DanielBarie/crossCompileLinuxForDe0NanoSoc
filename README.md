@@ -27,7 +27,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ```
-- install bison, flex, bc, build-essential
+- install bison, flex, bc, build-essential, libssl-dev
 - get uboot (according to (1))
 - fix error: https://blog.lexina.in/2021/05/solution-for-multiple-definition-of-yylloc-error-u-boot/ (declare it as external)
 - done building uboot
