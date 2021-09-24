@@ -12,10 +12,11 @@ Inspired by
 - Specifically the FPGA region of the device tree: https://www.kernel.org/doc/Documentation/devicetree/bindings/fpga/fpga-region.txt
 - And this one for the Altera/Intel SoCs (walkthrough): https://rocketboards.org/foswiki/Documentation/HOWTOCreateADeviceTree
 
-# preconditions
+# Prerequisites
 - When running in a VM make sure to have at least 16GB of (virtual) disk space
 - Make sure to have a swap file (compilation takes a lot of memory, something like ```arm-none-linux-gnueabihf-gcc: fatal error: Killed signal terminated program cc1 
 compilation terminated.``` is an indicator for too little memory. Check dmesg). As an alternative you might want to try to reduce the number of parallel compilation processes. 
+- install bison, flex, bc, build-essential, libssl-dev, rsync
 
 
 # steps
@@ -35,7 +36,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ```
-- install bison, flex, bc, build-essential, libssl-dev, rsync
+
 - get uboot (according to (1))
 - fix error: https://blog.lexina.in/2021/05/solution-for-multiple-definition-of-yylloc-error-u-boot/ (declare it as external)
 - done building uboot
