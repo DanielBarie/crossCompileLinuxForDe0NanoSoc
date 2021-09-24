@@ -28,3 +28,6 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 - check for latest long term support kernel: https://www.kernel.org/category/releases.html
 - as of the time of writing: 5.10 (until end of 2026)
 - get appropriate kernel sources: `git clone --depth 1 -b v5.10 git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux-5.10-armv7-fpga`
+- `cd linux-5.10-armv7-fpga/`
+- `git checkout -b linux-5.10-armv7-fpga refs/tags/v5.10`
+- 
