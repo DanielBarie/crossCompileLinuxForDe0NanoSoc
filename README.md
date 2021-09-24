@@ -27,12 +27,12 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ```
-- install bison, flex, bc, build-essential, libssl-dev
+- install bison, flex, bc, build-essential, libssl-dev, rsync
 - get uboot (according to (1))
 - fix error: https://blog.lexina.in/2021/05/solution-for-multiple-definition-of-yylloc-error-u-boot/ (declare it as external)
 - done building uboot
 
-- check for latest long term support kernel: https://www.kernel.org/category/releases.html
+- check for latest long term support kernel: https://www.kernel.org/category/releases.html and https://www.kernel.org/ for the latest .version
 - as of the time of writing: 5.10 (until end of 2026)
 - get appropriate kernel sources: `git clone --depth 1 -b v5.10 git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux-5.10-armv7-fpga`
 - `cd linux-5.10-armv7-fpga/`
