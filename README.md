@@ -2,6 +2,7 @@
 Inspired by
 - https://forum.digikey.com/t/debian-getting-started-with-the-de0-nano-soc-kit/12434 (1)
 - https://github.com/ikwzm/FPGA-SoC-Linux
+- https://rocketboards.org/foswiki/Documentation/BuildingBootloader
 
 # steps
 - `wget -c https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf.tar.asc` or whatever version is current.
