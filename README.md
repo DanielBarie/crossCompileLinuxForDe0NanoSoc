@@ -37,4 +37,5 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 - get appropriate kernel sources: `git clone --depth 1 -b v5.10 git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux-5.10-armv7-fpga`
 - `cd linux-5.10-armv7-fpga/`
 - `git checkout -b linux-5.10-armv7-fpga refs/tags/v5.10`
+- after all the patching (or not) do `export CROSS_COMPILE=~/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-`
 - 
