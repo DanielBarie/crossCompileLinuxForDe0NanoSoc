@@ -16,7 +16,7 @@ Inspired by
 - When running in a VM make sure to have at least 16GB of (virtual) disk space
 - Make sure to have a swap file (compilation takes a lot of memory, something like ```arm-none-linux-gnueabihf-gcc: fatal error: Killed signal terminated program cc1 
 compilation terminated.``` is an indicator for too little memory. Check dmesg). As an alternative you might want to try to reduce the number of parallel compilation processes. 
-- install bison, flex, bc, build-essential, libssl-dev, rsync
+- install bison, flex, bc, build-essential, libssl-dev, rsync, ncurses-dev
 
 
 # steps
