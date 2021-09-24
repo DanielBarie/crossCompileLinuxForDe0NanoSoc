@@ -4,16 +4,24 @@ Inspired by
 - https://github.com/ikwzm/FPGA-SoC-Linux
 - https://rocketboards.org/foswiki/Documentation/BuildingBootloader
 - https://bitlog.it/20170820_building_embedded_linux_for_the_terasic_de10-nano.html
+- https://blog.night-shade.org.uk/2013/12/building-a-pure-debian-armhf-rootfs/
+- https://wiki.debian.org/Debootstrap (for debbootstrap documentation)
 
 # recommended reading 
-- Understanding the device tree (we'll be patching): https://www.nxp.com/docs/en/application-note/AN5125.pdf
+- Understanding the device tree: https://www.nxp.com/docs/en/application-note/AN5125.pdf
 - Specifically the FPGA region of the device tree: https://www.kernel.org/doc/Documentation/devicetree/bindings/fpga/fpga-region.txt
 - And this one for the Altera/Intel SoCs (walkthrough): https://rocketboards.org/foswiki/Documentation/HOWTOCreateADeviceTree
+
+# preconditions
+- When running in a VM make sure to have at least 16GB of (virtual) disk space
+- Make sure to have a swap file (compilation takes a lot of memory, something like ```arm-none-linux-gnueabihf-gcc: fatal error: Killed signal terminated program cc1 
+compilation terminated.``` is an indicator for too little memory. Check dmesg)
+
 
 # steps
 - `wget -c https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf.tar.asc` or whatever version is current.
 
-- rename this (remove .asc file ending)
+- Rename this file (remove .asc file ending)
 
 - unpack (tar xvf)
 
@@ -37,5 +45,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 - get appropriate kernel sources: `git clone --depth 1 -b v5.10 git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux-5.10-armv7-fpga` or from  https://github.com/altera-opensource/linux-socfpga
 - `cd linux-5.10-armv7-fpga/`
 - `git checkout -b linux-5.10-armv7-fpga refs/tags/v5.10`
-- after all the patching (or not) do `export CROSS_COMPILE=~/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-`
+- get patches from https://github.com/ikwzm/FPGA-SoC-Linux (download master.zip, unpack)
+- Apply at least `patch -p1 < ../<dir from previous step>/files/linux-5.4.105-armv7-fpga.diff` (for armv7_fpga_defconfig), won't take you all the way. Finish it by hand (fpga-bridge renaming)
+- After all the patching (or not) do `export CROSS_COMPILE=~/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-`
+- `make armv7_fpga_defconfig`
 - 
