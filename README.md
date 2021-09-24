@@ -34,7 +34,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 - check for latest long term support kernel: https://www.kernel.org/category/releases.html and https://www.kernel.org/ for the latest .version
 - as of the time of writing: 5.10 (until end of 2026)
-- get appropriate kernel sources: `git clone --depth 1 -b v5.10 git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux-5.10-armv7-fpga`
+- get appropriate kernel sources: `git clone --depth 1 -b v5.10 git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux-5.10-armv7-fpga` or from  https://github.com/altera-opensource/linux-socfpga
 - `cd linux-5.10-armv7-fpga/`
 - `git checkout -b linux-5.10-armv7-fpga refs/tags/v5.10`
 - after all the patching (or not) do `export CROSS_COMPILE=~/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-`
