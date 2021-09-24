@@ -17,7 +17,7 @@ Inspired by
 
 - unpack (tar xvf)
 
-- export variable ` export CC=`pwd`/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-`
+- export variable `export CC=\`pwd\`/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-`
 - check if we call the right compiler: `${CC}gcc --version`
 should read along the lines of 
 ```
